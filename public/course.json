@@ -1,0 +1,39 @@
+{
+    "subjects":[
+        {
+            "subId":1,
+            "subName":"Operating System",
+            "urlToImage":"https://imgs.search.brave.com/Q8c39nin0HljTmN_M_uPkbhhajr_EhVswuU6rAV9rzE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzE3Lzg5LzIz/LzM2MF9GXzExNzg5/MjM0N19rTGI4QXJK/Y0FxcU44VG84YmlK/a01BbnBiSk9ibXlK/Ti5qcGc",
+            "description":"OS is a good subject",
+            "link":"/os.js"
+        },
+        {
+            "subId":2,
+            "subName":"JavaScript",
+            "urlToImage":"https://cdn.mos.cms.futurecdn.net/EzgdmaCQuT84bgDL4fhXZS.jpg",
+            "description":"JavaScript: Web programming language for dynamic and interactive content.",
+            "link":"/"
+        },
+        {
+            "subId":3,
+            "subName":"Oops Concept",
+            "urlToImage":"",
+            "description":"",
+            "link":"/"
+        },
+        {
+            "subId":4,
+            "subName":"React",
+            "urlToImage":"",
+            "description":"",
+            "link":"/"
+        },
+        {
+            "subId":5,
+            "subName":"Linux",
+            "urlToImage":"",
+            "description":"",
+            "link":"/"
+        }
+    ]
+}
