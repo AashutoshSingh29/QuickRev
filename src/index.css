@@ -52,6 +52,7 @@ ul {
   text-decoration: none;
  }
 
+ /* Course Item card CSS */
 .card {
   max-width: 400px;
   border: 1px solid rgb(158, 34, 34);
@@ -70,6 +71,9 @@ ul {
   /* align-self: stretch; */
   border-top-left-radius: 0%;
 }
+
+
+/* Course Container CSS */
 .course-container{
   /* border: 2px solid black ; */
   margin: 10px;
@@ -78,4 +82,22 @@ ul {
   align-content: center;
   flex-wrap: wrap;
   gap: 40px 10px;
+}
+
+/* Button for Read More on Cards */
+.btn{
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  opacity: 30;
+  height: 40px;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  font-size: medium;
+  color: #fff;
+}
+
+.btn:hover{
+  box-shadow: 0 5px 5px 0 rgba(4, 4, 4, 0.24), 0 5px 5px 0 rgba(4, 4, 4, 0.19);
 }
