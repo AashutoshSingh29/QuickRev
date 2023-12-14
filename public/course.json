@@ -4,7 +4,7 @@
             "subId":1,
             "subName":"Operating System",
             "urlToImage":"https://imgs.search.brave.com/Q8c39nin0HljTmN_M_uPkbhhajr_EhVswuU6rAV9rzE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzE3Lzg5LzIz/LzM2MF9GXzExNzg5/MjM0N19rTGI4QXJK/Y0FxcU44VG84YmlK/a01BbnBiSk9ibXlK/Ti5qcGc",
-            "description":"OS is a good subject",
+            "description":"Operating system: Software that manages computer resources and enables user/application interaction.",
             "link":"/os.js"
         },
         {
@@ -18,28 +18,28 @@
             "subId":3,
             "subName":"Oops Concept",
             "urlToImage":"https://imgs.search.brave.com/bun0AWFhb75rnz9m4iIczrFfHinToQrgvod2Vr40pGg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c29mdHdhcmV0ZXN0/aW5naGVscC5jb20v/d3AtY29udGVudC9x/YS91cGxvYWRzLzIw/MTkvMTEvT09QUy1D/b25jZXB0LWluLUph/dmEucG5n",
-            "description":"",
+            "description":"OOP organizes code using objects for modularity and reusability.",
             "link":"/"
         },
         {
             "subId":4,
             "subName":"React",
             "urlToImage":"https://imgs.search.brave.com/X7ne85wz7dzgiN0bN_BSodu0TvuyUbCykGNAJe3xEoU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29kZWNhZGVteS5j/b20vcmVzb3VyY2Vz/L2Jsb2cvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjIvMTIvV2hh/dC1pcy1SZWFjdC0t/MS5wbmc",
-            "description":"",
+            "description":"React: JavaScript library for building user interfaces with components.",
             "link":"/"
         },
         {
             "subId":5,
             "subName":"Linux",
             "urlToImage":"https://imgs.search.brave.com/t3FrfsKFZfAS_oI9P_08DRgx_8LTbTwzDMRTOhwdX7w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pdHNm/b3NzLmNvbS9jb250/ZW50L2ltYWdlcy8y/MDIzLzAxL2xpbnV4/LXBob3RvLW1hbmFn/ZW1lbnQtZnQuanBn",
-            "description":"",
+            "description":"Linux: Open-source operating system kernel, widely used for servers.",
             "link":"/"
         },
         {
             "subId":6,
             "subName":"DBMS",
             "urlToImage":"https://imgs.search.brave.com/-UaZ6ybCnhsk_KQn0s-9Eb6bUXngmuPjvMGN1805-14/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGVjaG9wZWRpYS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTEvMDYvZGJtcy1p/bWFnZS0xLnBuZw",
-            "description":"",
+            "description":"DBMS (Database Management System): Software for efficient storage and retrieval of structured data.",
             "link":"/"
         }
     ]

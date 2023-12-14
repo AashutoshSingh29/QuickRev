@@ -60,6 +60,7 @@ ul {
   background-color: white;
   box-shadow: 0px 0px 10px 3px lightgray;
   padding: 0px 0px ; 
+  border-radius: 15px;
 }
 .card-text{
   padding: 10px 0px;
@@ -69,7 +70,8 @@ ul {
   width: 100%;
   max-height: 50%;
   /* align-self: stretch; */
-  border-top-left-radius: 0%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; 
 }
 
 
