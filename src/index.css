@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(to bottom, #4cb4f0,#ffffff ); */
+  background: linear-gradient(to bottom, #f36a30,#f4f0f0 );
+  background-attachment: fixed;
 }
 
 code {
@@ -58,10 +61,14 @@ ul {
   border: 1px solid rgb(158, 34, 34);
   margin-top: 80px;
   background-color: white;
-  box-shadow: 0px 0px 10px 3px lightgray;
   padding: 0px 0px ; 
   border-radius: 15px;
 }
+
+.card:hover{
+  box-shadow: 0px 0px 10px 3px lightgray;
+}
+
 .card-text{
   padding: 10px 0px;
 }
