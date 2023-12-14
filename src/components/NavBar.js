@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NavBar() {
   return (
-    <div>
+    <div className='container-fluid'>
       <nav className='navbar'>      
       <div className="menu">
         <ul>
