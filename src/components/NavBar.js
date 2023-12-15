@@ -1,18 +1,55 @@
-import React from 'react'
+import {React,useState} from 'react'
 
-export default function NavBar() {
+const NavBar = () =>{
+
+  const [isNavVisible, setNavVisibility] = useState(false);
+
+  const toggleNavbar = () => {
+    setNavVisibility(!isNavVisible);
+  };
   return (
     <div className='container-fluid'>
-      <nav className='navbar'>      
+      <nav className='navbar'>     
       <div className="menu">
-        <ul>
-            <li><a href="/">QuickRev</a></li>
+        
+        <label className="logo">
+              <a href="/">
+                <img
+                  src="/nameIcon6.png"
+                  alt="Company Logo"
+                  // width="50"
+                  // height="50"
+                  
+                />
+              </a>
+            </label>
+            <ul className={`listItems ${isNavVisible ? 'visible' : ''}`}>
+            <li className='companyName'><a href="/">QuickRev</a></li>
             <li><a href="/">Home</a></li>
             <li><a href="/">About Us</a></li>
             <li><a href="/">Contact Us</a></li>
-        </ul>      
+
+          </ul><ul>
+
+            <div className="bars-icon" onClick={toggleNavbar} >
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div> 
+        </ul>    
+        
       </div>
       </nav>
+       
     </div>
   )
+
+  // function toggleNavbar() {
+  //   var navbar = document.querySelectorAll('.listItems');
+  //   navbar.forEach(item => {
+  //   item.classList.toggle('visible');
+  // });
+  // }
 }
+
+export default NavBar;
