@@ -1,4 +1,5 @@
 import {React,useState} from 'react'
+import { Link } from 'react-router-dom';
 
 const NavBar = () =>{
 
@@ -25,9 +26,9 @@ const NavBar = () =>{
             </label>
             <ul className={`listItems ${isNavVisible ? 'visible' : ''}`}>
             <li className='companyName'><a href="/">QuickRev</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/">Contact Us</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/aboutus">About Us</Link></li>
+            <li><Link to="/contactus">Contact Us</Link></li>
 
           </ul><ul>
 

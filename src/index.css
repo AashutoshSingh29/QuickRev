@@ -213,3 +213,65 @@ ul {
 .btn:hover{
   box-shadow: 0 5px 5px 0 rgba(4, 4, 4, 0.24), 0 5px 5px 0 rgba(4, 4, 4, 0.19);
 }
+
+
+
+/* About Us page Banner */
+.containerCrousal{
+  display: block;
+  margin-top: 60px;
+  height: 450px;
+}
+
+.bannerImage{
+  height: 100%;
+}
+
+.aboutUsContent{
+  min-height: 100vh;
+}
+
+/* Footer Css */
+
+footer{
+  background-color: #333333;
+  display: grid;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  color: white;
+  padding: 80px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  bottom: 0;
+  /* position: relative; */
+}
+@media (max-width: 858px) {
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.footer-content.contact{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* margin-left: 80px; */
+}
+
+.footer-content.social{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUsParaHeading{
+  margin-top: 5px;
+}
+
+.aboutUsPara{
+  color: #555;
+  text-align: justify;
+  margin: 20px;
+}
