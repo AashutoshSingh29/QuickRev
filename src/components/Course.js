@@ -22,17 +22,8 @@ const  Course = () => {
           return <div className="col-md3" key={element.subId}>
           <CourseItem title={element.subName} text={element.description} url={element.urlToImage}></CourseItem>
           </div>
-          
-          
-          // console.log(element)
-          
-          })}
-            
-            
+          })}  
         </div>
-      
-
-
     </div>
   )
 }

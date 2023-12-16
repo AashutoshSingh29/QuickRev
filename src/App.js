@@ -6,6 +6,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import SubjectTopics from './components/SubjectTopics';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Course/>} ></Route>
         <Route path="/aboutus" element={<AboutUs></AboutUs>} > </Route>
+        <Route path="/contactus" element={<SubjectTopics/>} > </Route>
       </Routes>
     </div>
   );
