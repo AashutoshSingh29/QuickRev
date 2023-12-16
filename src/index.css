@@ -153,7 +153,7 @@ ul {
   display: block;
   color: white;
   text-align: center;
-  padding: 16px;
+  padding: 20px;
   text-decoration: none;
  }
 
@@ -208,6 +208,7 @@ ul {
   text-align: center;
   font-size: medium;
   color: #fff;
+  margin: 5px;
 }
 
 .btn:hover{
@@ -231,7 +232,7 @@ ul {
   min-height: 100vh;
 }
 
-/* Footer Css */
+/* Footer Css Starts*/
 
 footer{
   background-color: #333333;
@@ -266,6 +267,23 @@ footer{
   display: flex;
   flex-direction: column;
 }
+.footer-content.quick-links{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+  
+}
+.footer-content a{
+  color: white;
+  text-decoration: none;
+}
+.footer-content a:hover{
+  background-color: #111111;
+  width: fit-content;
+}
+
 .aboutUsParaHeading{
   margin-top: 5px;
 }
@@ -274,4 +292,76 @@ footer{
   color: #555;
   text-align: justify;
   margin: 20px;
+}
+
+.icon-video img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Footer CSS Ends here */
+
+
+/* Intro Card Css Here */
+
+.intro-card{
+  font-family: "candra", sans-serif;
+  width: 340px;
+  overflow: hidden;
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  /* margin-bottom: 20px;
+  margin-left: 120px; */
+}
+
+
+.intro-card-img{
+width: 100%;
+height: 160px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+object-fit: cover;
+}
+
+.intro-profile-image img{
+  z-index: 0;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: -75px;
+  border-radius: 100%;
+  border: 2px solid #f4f0f0;
+}
+
+.intro-profile-image img:hover{
+  transform: scale(1.1);
+}
+
+.intro-card-title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro-card-text{
+  font-size: small;
+  padding: 5px;
+}
+
+.intro{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+
 }
