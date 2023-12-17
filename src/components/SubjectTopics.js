@@ -25,7 +25,7 @@ const SubjectTopics = () => {
                 "A class that is derived from another class is called a subclass.",
                 "The class from which the subclass is derived is called a superclass.",
                 "Class doesn't consume any space.",
-                "It is a logical entity."
+                "It is a logical entity.",
               ],
             "example":"public class Dog {\n  String breed;\n  int Age;\n  String color;\n  void barking () {}\n}"
         }

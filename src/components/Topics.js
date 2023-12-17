@@ -32,7 +32,7 @@ const Topics = (props) =>{
         <div className="topic-body">
           <ul className="topics-ul">
           {bodyArray.map((detail, index) => (
-                <li key={index}>{detail}</li>
+                <li className="topics-listItem" key={index}>{detail}</li>
               ))}
           </ul>
         </div>
