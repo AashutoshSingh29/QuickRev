@@ -2,6 +2,7 @@ import './App.css';
 import AboutUs from './components/AboutUs';
 import Course from './components/Course';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer'
 import {
   Route,
   Routes
@@ -17,6 +18,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs></AboutUs>} > </Route>
         <Route path="/contactus" element={<SubjectTopics/>} > </Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }
