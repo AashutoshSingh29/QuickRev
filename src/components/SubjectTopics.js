@@ -30,7 +30,6 @@ const SubjectTopics = () => {
             "example":"public class Dog {\n  String breed;\n  int Age;\n  String color;\n  void barking () {}\n}"
         }
     ]
-    
 // const [topics,setTopics] = useState(oops);
 
 // let something= () => {

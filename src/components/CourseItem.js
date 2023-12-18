@@ -3,7 +3,7 @@ import React from 'react'
 function CourseItem(props) {
   return (
     <div className='course-container'>
-        <div className="card" style={{ width:`25rem` , height:`25rem`}}>
+        <div className="card-course" >
             <img src={props.url} className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h3 className="card-title">{props.title}</h3>

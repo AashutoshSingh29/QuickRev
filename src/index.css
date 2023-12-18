@@ -158,13 +158,14 @@ ul {
  }
 
  /* Course Item card CSS */
-.card {
+.card-course {
   max-width: 400px;
   border: 1px solid rgb(158, 34, 34);
   margin-top: 80px;
   background-color: white;
   padding: 0px 0px ; 
   border-radius: 15px;
+  height: 25rem;
 }
 
 .card:hover{
@@ -184,6 +185,21 @@ ul {
   border-top-right-radius: 15px; 
 }
 
+@media (max-width: 858px){
+  .course-container{
+    max-width: 100%;
+    height: auto;
+  }
+  .card-course{
+    height: 25rem;
+  }
+.card-course button{
+  height: auto;
+  margin-top: 15px;
+}
+}
+
+/* Course Item Card CSS Ends */
 
 /* Course Container CSS */
 .course-container{
