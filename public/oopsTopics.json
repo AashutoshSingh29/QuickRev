@@ -14,7 +14,7 @@
         "example": "public class Dog {\n  String breed;\n  int Age;\n  String color;\n  void barking () {}\n}"
       },
       {
-        "topicId": 2,
+        "topicId": 1222,
         "heading": "Classes and Objects",
         "body": [
           "The collection of objects that share common properties and behavior is called class.",
@@ -25,7 +25,30 @@
           "It is a logical entity."
         ],
         "example": "public class Dog {\n  String breed;\n  int Age;\n  String color;\n  void barking () {}\n}"
+      },
+      {
+        "topicId": 2,
+        "heading": "Objects",
+        "body": [
+          "An object is a self-contained component that consists of methods and properties to make a particular type of data useful.",
+          "An object is an instance of a class.",
+          "ClassName ObjectName = new ClassName();"
+        ],
+        "example": "public static void main(String [] args) {\n  Dog d = new Dog();  // object created\n  d.barking();       // object called\n}"
+      },
+      {
+        "topicId": 3,
+        "heading": "Inheritance",
+        "body": [
+          "Inheritance is the ability to access or derive one class from another existing class.",
+          "The Base class is also called a parent or superclass & the derived class is called a child class or subclass.",
+          "Inheritance is achieved by using the `extends` keyword.",
+          "It helps in code reuse and more simple implementation."
+        ],
+        "example": "class Subclass-name extends Superclass-name  {\n  //methods and fields\n}"
       }
+      
+      
     ]
   }
   

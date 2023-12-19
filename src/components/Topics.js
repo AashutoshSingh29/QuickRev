@@ -4,7 +4,7 @@ const Topics = (props) =>{
   return (
       <>
       <div className="topics-container">
-        <p>This is topic {props.topicId}</p>
+        {/* <p>This is topic {props.topicId}</p> */}
         <div className="topic-heading"><h1>{props.heading}</h1>   </div>
         <div className="topic-body">
           <ul className="topics-ul">
