@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import SubjectTopics from './SubjectTopics';
 
 function CourseItem(props) {
+
+  const [isToggled, setIsToggled] = useState(false);
+
   return (
     <div className='course-container'>
         <div className="card-course" >
@@ -8,9 +12,11 @@ function CourseItem(props) {
             <div className="card-body">
                 <h3 className="card-title">{props.title}</h3>
                 <p className="card-text">{props.text}</p>
-                <button className='btn' > Read More</button>
+                <button className='btn' onClick={ () => {setIsToggled(!isToggled)}} > Read More</button>
+                
             </div>
         </div>
+        {isToggled && <SubjectTopics/>}
     </div>
   )
 }
