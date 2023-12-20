@@ -13,11 +13,11 @@ const Topics = (props) =>{
               ))}
           </ul>
         </div>
-        <div className="topic-example" >
+        { props.example &&  <div className="topic-example" >
           <pre className="topic-pre"> 
             <code className="topic-code">{props.example}</code>          
           </pre>       
-        </div>
+        </div>}
       
       </div>
       </>

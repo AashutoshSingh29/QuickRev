@@ -33,6 +33,25 @@
           "It helps in code reuse and more simple implementation."
         ],
         "example": "class Subclass-name extends Superclass-name  {\n  //methods and fields\n}"
+      },
+      {
+        "topicId": 4,
+        "heading": "Types of Inheritance",
+        "body": [
+          "Single",
+          "Multi-level",
+          "Hierarchical",
+          "Multiple",
+          "Hybrid"
+        ]
+      },
+      {
+        "topicId": 5,
+        "heading": "Single Inheritance",
+        "body": [
+          " When one class inherits another class it is called single inheritance."
+        ],
+        "example": "class Animal {\n  void eat() {\n    System.out.println(\"eating...\");\n  }\n}\n\nclass Dog extends Animal {\n  void bark() {\n    System.out.println(\"barking...\");\n  }\n}"
       }
       
       

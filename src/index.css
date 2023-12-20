@@ -405,6 +405,7 @@ object-fit: cover;
   .subjects-container{
     width: 100%;
     height: auto;
+    align-items: stretch;
     /* max-width: 250px; */
   }
 }
@@ -417,10 +418,10 @@ object-fit: cover;
 
 .topics-container{
   width: 750px;
-  height: 450px;
+  height: auto;
   border: solid 2px white;
   background-color: #eee ;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* box-sizing: border-box; */
   overflow: auto;
 }
@@ -431,6 +432,9 @@ object-fit: cover;
     height: auto;
     /* max-width: 250px; */
 
+  }
+  .topic-code{
+    font-size: 12px;
   }
 }
 @media (max-width:425px){
@@ -459,7 +463,7 @@ height: auto;
 }
 .topic-example{
   background-color: #ababab72;
-  overflow: hidden;
+  overflow: auto;
 }
 .topic-pre{
   background-color: #d1cfcf;
