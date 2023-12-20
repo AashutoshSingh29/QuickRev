@@ -14,8 +14,8 @@ const Topics = (props) =>{
           </ul>
         </div>
         <div className="topic-example" >
-          <pre> 
-            <code>{props.example}</code>          
+          <pre className="topic-pre"> 
+            <code className="topic-code">{props.example}</code>          
           </pre>       
         </div>
       

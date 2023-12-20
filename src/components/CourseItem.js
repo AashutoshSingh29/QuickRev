@@ -1,9 +1,7 @@
 import React from 'react'
-// import SubjectTopics from './SubjectTopics';
+import { Link } from 'react-router-dom'
 
 function CourseItem(props) {
-
-  // const [isToggled, setIsToggled] = useState(false);
 
   return (
     <div className='course-container'>
@@ -12,11 +10,10 @@ function CourseItem(props) {
             <div className="card-body">
                 <h3 className="card-title">{props.title}</h3>
                 <p className="card-text">{props.text}</p>
-                <button className='btn' onClick={ () => {props.setA(true)}} > Read More</button>
+                <Link to={props.urltoContent}><button className='btn' >Read More</button></Link>
                 
             </div>
         </div>
-        {/* {isToggled && <SubjectTopics/>} */}
     </div>
   )
 }

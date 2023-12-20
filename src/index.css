@@ -466,6 +466,7 @@ height: auto;
   border: 1px solid #999;
   display: block;
   padding: 5px;
+  overflow-x: hidden;
 }
 
 .topics-ul{
@@ -481,4 +482,6 @@ height: auto;
   color: #111111;
   padding-left: 20px;
 }
+
+
 /* Topics Css Ended Here */
