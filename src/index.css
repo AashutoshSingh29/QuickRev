@@ -394,7 +394,7 @@ object-fit: cover;
 /* Subject Topic CSS Starts */
 
 .subjects-container{
-  margin-top: 80px;
+  margin-top: 60px;
   border: solid 2px black;
   display: flex;
   flex-direction: column;
@@ -419,10 +419,10 @@ object-fit: cover;
 .topics-container{
   width: 750px;
   height: auto;
-  border: solid 2px white;
+  /* border: solid 2px white; */
   background-color: #eee ;
   /* margin-bottom: 20px; */
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   overflow: auto;
 }
 

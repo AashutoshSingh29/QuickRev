@@ -52,9 +52,280 @@
           " When one class inherits another class it is called single inheritance."
         ],
         "example": "class Animal {\n  void eat() {\n    System.out.println(\"eating...\");\n  }\n}\n\nclass Dog extends Animal {\n  void bark() {\n    System.out.println(\"barking...\");\n  }\n}"
+      },
+      {
+        "topicId": 6,
+        "heading": "Multilevel Inheritance",
+        "body": [
+          " When Inheritance is done in a chain it is called multilevel inheritance. Like class C is derived from class B and class B is derived from class A."
+        ],
+        "example": "class Animal { \n  void eat() {\n    System.out.println(\"eating...\");\n  }\n}\n\nclass Dog extends Animal { \n  void bark() {\n    System.out.println(\"barking...\");\n  }\n}\n\nclass BabyDog extends Dog { \n  void weep() {\n    System.out.println(\"weeping...\");\n  }\n}"
+      },
+      {
+        "topicId": 7,
+        "heading": "Hierarchical Inheritance",
+        "body": [
+          " When two or more classes inherit from one class it’s called Hierarchical Inheritance."
+        ],
+        "example": "class Animal {\n  void eat() {\n    System.out.println(\"eating...\");\n  }\n}\n\nclass Dog extends Animal {\n  void bark() {\n    System.out.println(\"barking...\");\n  }\n}\n\nclass Cat extends Animal {\n  void meow() {\n    System.out.println(\"meowing...\");\n  }\n}"
+      },
+      {
+        "topicId": 8,
+        "heading": "Multiple Inheritance",
+        "body": [
+          " To reduce the complexity and simplify the language, multiple inheritance is not supported in java.",
+          "If we try to do so it will give compile time error.",
+          "It can be achieved by using interfaces."
+        ]
+      },
+      {
+        "topicId": 9,
+        "heading": "Hybrid Inheritance",
+        "body": [
+          " Hybrid inheritance is a combination of two or more types of inheritances."
+        ]
+      },
+      {
+        "topicId": 10,
+        "heading": "Interfaces",
+        "body": [
+          "An Interface in java is a blueprint of a class.",
+          "A java interface contains static constants and abstract methods.",
+          "It is used to achieve abstraction and multiple inheritance in java.",
+          "It represents the IS-A relationship.",
+          "To declare an interface we use the interface Keyword."
+        ],
+        "example": "interface AnimalEat {\n  void eat();\n}\n\ninterface AnimalTravel {\n  void travel();\n}\n\nclass Animal implements AnimalEat, AnimalTravel {\n  public void eat() {\n    System.out.print(\"Animal is Eating\");\n  }\n  public void travel() {\n    System.out.print(\"Animal is Travelling\");\n  }\n}"
+      },
+      {
+        "topicId": 11,
+        "heading": "Abstraction",
+        "body": [
+          "Abstraction is the concept of object-oriented programming that 'shows' only essential attributes and 'hides' unnecessary information.",
+          "Data abstraction makes complex systems more user-friendly by removing the specifics of the system mechanics.",
+          "Your car is a great example of abstraction. You can start a car by turning the key or pressing the start button. You don't need to know how the engine is getting started, and what all components your car has. The car's internal implementation and complex logic are completely hidden from the user.",
+          "In this example, Bike is an abstract class that contains only one abstract method run. Its implementation is provided by the Yamaha class."
+        ],
+        "example":"abstract class Bike {\n  abstract void run();\n}\n\nclass Yamaha extends Bike {\n  void run() {\n    System.out.print(\"Run Safely\");\n  }\n\n  public static void main(String args[]) {\n    Bike obj = new Yamaha(); // creating object\n    obj.run();\n  }\n}"
+      },
+      {
+        "topicId": 12,
+        "heading": "Encapsulation",
+        "body": [
+          "Encapsulation refers to the bundling of fields and methods inside a single class.",
+          "It prevents outer classes from accessing and changing the fields and methods of a class.",
+          "Example: In the example, we have created a class named Area. The main purpose of this class is to calculate the area.",
+          "To calculate an area, we need two variables: length and breadth and a method: getArea(). Hence, we bundled these fields and methods inside a single class.",
+          "Here, the fields and methods can be accessed from other classes as well. Hence, this is not data hiding.",
+          "This is only Encapsulation."
+        ],
+        "example":"class Area {\n\n  int length;\n  int breadth;\n\n  Area(int length, int breadth) {\n    this.length = length;\n    this.breadth = breadth;\n  }\n\n  public void getArea() {\n    int area = length * breadth;\n    System.out.println(\"Area: \" + area);\n  }\n}\n\nclass Main {\n  public static void main(String[] args) {\n    Area rectangle = new Area(5, 6);\n    rectangle.getArea();\n  }\n}"
+      },
+      {
+          "topicId": 13,
+          "heading": "Polymorphism",
+          "body": [
+            "The word polymorphism is made up of two words “poly” and “morphs” which means may forms.",
+            "Polymorphism is the ability to display a message in many forms."
+          ]
+      },
+      {
+        "topicId": 14,
+        "heading": "Compile-Time Polymorphism",
+        "body": [
+          "This is also called static polymorphism.",
+          "It is checked at compile time.",
+          "This is achieved by Function Overloading or an Operator Overloading."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 15,
+        "heading": "Runtime Polymorphism",
+        "body": [
+          "This is also called as Dynamic Polymorphism.",
+          "It is checked at runtime.",
+          "It is achieved by method overriding."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 16,
+        "heading": "Constructor",
+        "body": [
+          "A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.",
+          "For example, suppose there is a class with the name “MyClass”, then when you instantiate this class, you pass the",
+          "MyClass myClassObject = new MyClass();"
+        ],
+        "example": null
+      },
+      {
+        "topicId": 17,
+        "heading": "Types of Constructor",
+        "body": [
+          "Default Constructor",
+          "Parameterized Constructor",
+          "Copy Constructor"
+        ],
+        "example": null
+      },
+      {
+        "topicId": 18,
+        "heading": "Default Constructor",
+        "body": [
+          "A default constructor is a constructor that either has no parameters, or if it has parameters, all the parameters have default values.",
+          "In C++, if no user-defined constructor exists for a class A and one is needed, the compiler implicitly declares a default parameterless constructor A::A().",
+          "In Java, a constructor that is automatically created by the Java compiler if it is not explicitly defined is called Default Constructor."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 19,
+        "heading": "Parameterized Constructor",
+        "body": [
+          "The constructor's which takes one or more parameters are known as a parameterized constructor."
+        ],
+        "example":"class ABC {\n  String Name;\n\n  ABC(name) {\n    System.out.print(\"Name : \" + name);\n  }\n\n  public static void main(String args[]) {\n    // calling constructor by passing one parameter\n    ABC obj = new ABC(\"Ramesh\");\n  }\n}"
+      },
+      {
+        "topicId": 20,
+        "heading": "Copy Constructor",
+        "body": [
+          "Copy Constructor is a type of constructor, whose purpose is to copy an object to another.",
+          "What it means is that a copy constructor will clone an object and its values, into another object, given that both the objects are of the same class."
+        ],
+        "example": "class ABC {\n  int x;\n\n  ABC(int y) {\n    x = y;\n  }\n\n  // Copy constructor\n  ABC(ABC abc) {\n    x = abc.x;\n  }\n}"
+      },
+      {
+        "topicId": 21,
+        "heading": "Destructors",
+        "body": [
+          "Constructors initialize objects and allocate spaces for them.",
+          "Destructors are also special methods.",
+          "Destructors free up the resources and memory occupied by an object.",
+          "Destructors are automatically called when an object is being destroyed.",
+          "It is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to delete.",
+          "A destructor has the same name as the class, preceded by a tilde (~)."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 22,
+        "heading": "Access Specifier",
+        "body": [
+          "As the name suggests, access modifiers help to restrict the scope of a class, constructor, variable, method, data member."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 23,
+        "heading": "Public",
+        "body": [
+          "The public access modifier is specified using the keyword public.",
+          "It has the widest scope among all other access modifiers.",
+          "Classes, methods, or data members declared with public are accessible from anywhere in the program.",
+          "Avoid public fields except for constants."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 24,
+        "heading": "Private",
+        "body": [
+          "It is declared using a private keyword.",
+          "The methods or data members declared as private are accessible only within the class in which they are declared.",
+          "Any other class of the same package will not be able to access these members.",
+          "Top-level classes or interfaces cannot be declared as private because:",
+          [
+            "Private means 'only visible within the enclosing class'.",
+            "Protected means 'only visible within the enclosing class and any subclasses'."
+          ]
+        ],
+        "example": null
+      },
+      {
+        "topicId": 25,
+        "heading": "Protected",
+        "body": [
+          "It is declared using a 'protected' keyword.",
+          "They are accessible within the same package or subclasses in different packages."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 26,
+        "heading": "Default",
+        "body": [
+          "When no access specifier is specified, it is said to have a default access modifier by default.",
+          "Default access members are accessible only within the same package.",
+          "This means that classes, methods, or data members with default access are not visible outside the package.",
+          "Use default access when you want the member to be accessible only within its package context."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 27,
+        "heading": "Exception",
+        "body": [
+          "An exception is an event that occurs during the execution of a program, disrupting the normal flow of the program's instructions.",
+          "Exceptions can be caught and handled by the program.",
+          "When an exception occurs within a method, it creates an object known as the exception object, which contains details of the exception."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 28,
+        "heading": "Exception Handling",
+        "body": [
+          "Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.",
+          "The \"try\" keyword is used to specify a block where we should place an exception code. It must be followed by either \"catch\" or \"finally\".",
+          "The \"catch\" block is used to handle the exception. It must be preceded by the \"try\" block and can be followed by a \"finally\" block later.",
+          "The \"finally\" block is used to execute the necessary code of the program. It is executed whether an exception is handled or not.",
+          "The \"throw\" keyword is used to throw an exception.",
+          "The \"throws\" keyword is used to declare exceptions. It specifies that there may occur an exception in the method. It doesn't throw an exception and is always used with method signature."
+        ],
+        "example": "public class JavaExceptionExample\n{\n  public static void main(String args[])\n  {\n    try\n    {\n      // code that may raise exception\n      int data = 100 / 0;\n    }\n    catch(ArithmeticException e)\n    {\n      System.out.println(e);\n    }\n    // rest code of the program\n    System.out.println(\"rest of the code...\");\n  }\n}"
+      },
+      {
+        "topicId": 29,
+        "heading": "Garbage Collection",
+        "body": [
+          "Garbage collection is a memory management technique.",
+          "In C/C++, programmers are responsible for both memory creation and destruction.",
+          "In Java, the programmer need not worry about objects that are no longer used.",
+          "// How Garbage Collection works",
+          "Objects are created on heaps which allocate memory to the program.",
+          "Some objects will no longer be needed; garbage collectors find these objects and delete them to free up memory.",
+          "In C/C++, if a programmer forgets to delete the object after some time, it will cause OutOfMemoryErrors."
+        ],
+        "example": null
+      },
+      {
+        "topicId": 31,
+        "heading": "Overloading",
+        "body": [
+          "When two or more methods have the same name but different parameters, then it is called method overloading.",
+          "Parameters may differ in the number or type of input parameters or both.",
+          "Overloading is related to Compile-Time Polymorphism."
+        ],
+        "example": "public class Area {\n\n  // Overloaded area() with no parameter.\n  public int area()\n  {\n    int x=10, y=5;\n    return (x * y);\n  }\n\n  // Overloaded area() with two int parameters\n  public int area(int x, int y)\n  {\n    return (x * y);\n  }\n\n  // Overloaded area() with two double parameters\n  public double area(double x, double y)\n  {\n    return (x * y);\n  }\n\n  public static void main(String args[])\n  {\n    Area a = new Area();\n    System.out.println(a.area());\n    System.out.println(a.area(12, 15));\n    System.out.println(a.area(10.5, 12.2));\n  }\n}"
+      },
+      {
+        "topicId": 32,
+        "heading": "Overriding",
+        "body": [
+          "If the subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.",
+          "Overriding is the ability to define a behavior that's specific to the subclass type, which means a subclass can implement a parent class method based on its requirement.",
+          "With method overriding, we can achieve Runtime Polymorphism.",
+          "Requirements for overriding:",
+          "1. The method must have the same name as in the parent class.",
+          "2. The method must have the same parameter as in the parent class.",
+          "3. There must be an IS-A relationship (inheritance)."
+        ],
+        "example": "class Vehicle {\n\n  // defining a method\n  void run() {\n    System.out.println(\"Vehicle is running\");\n  }\n}\n\n// Creating a child class\nclass Bike2 extends Vehicle {\n\n  // defining the same method as in the parent class\n  void run() {\n    System.out.println(\"Bike is running safely\");\n  }\n\n  public static void main(String args[]) {\n\n    Bike2 obj = new Bike2();// creating object\n    obj.run();// calling method\n  }\n}"
       }
       
-      
+
     ]
   }
   
