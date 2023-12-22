@@ -8,6 +8,7 @@ import {
   Routes
 } from "react-router-dom";
 import SubjectTopics from './components/SubjectTopics';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Course/>} ></Route>
         <Route path="/aboutus" element={<AboutUs></AboutUs>} > </Route>
         <Route path="/oops" element={<SubjectTopics/>} > </Route>
+        <Route path='/login' element={<Login/>} ></Route>
       </Routes>
       <Footer/>
     </div>
