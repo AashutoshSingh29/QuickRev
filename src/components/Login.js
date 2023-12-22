@@ -6,6 +6,7 @@ const Login = () => {
             <span className="login-span">Sign Up</span>
             <input className="login-input" type="text" placeholder="Enter Username"/>
             <input className="login-input" type="password" placeholder="Enter Password" />
+            <button className="login-button" >Sign Up</button>
         </div>
    ) 
 }

@@ -497,15 +497,27 @@ height: auto;
   margin-top: 90px;
   box-sizing: border-box;
   border: #007bff 2px solid;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
 }
-.login-input{
-  border-radius: 2px
-}
-
 .login-span{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: medium;
 
+}
+
+
+.login-input{
+  border-radius: 2px
+}
+
+.login-button{
+  size: 50px;
+  color: green;
 }
