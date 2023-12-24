@@ -6,11 +6,16 @@ import { FaLockOpen } from "react-icons/fa6";
 const Login = () => {
 
     const [visible,setVisible] = useState([false]);
+    const [passType,setPassType] = useState(["password"])
 
-    const handelVisibility =()=>{
+    const handelLockVisibility =()=>{
         setVisible(!visible);
+        setPassType("text");
     }
-
+    const handelOpenVisibility =() =>{
+        setVisible(!visible);
+        setPassType("password");
+    }
 
    return(
     <div className="login">
@@ -22,10 +27,8 @@ const Login = () => {
             </div>
 
             <div className="input-box">
-            <input className="login-input" type="password" placeholder="Enter Password" />
-            {visible ?<FaLock className="icon-login" onClick={handelVisibility}/> :  <FaLockOpen className="icon-login" onClick={handelVisibility} />}
-            
-            
+            <input className="login-input" type={passType} placeholder="Enter Password" />
+            {visible ?<FaLock className="icon-login" onClick={handelLockVisibility}/> :  <FaLockOpen className="icon-login" onClick={handelOpenVisibility} />}
             </div>
 
             <div className="remember">
