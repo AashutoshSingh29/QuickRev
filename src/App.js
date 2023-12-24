@@ -17,7 +17,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Course/>} ></Route>
         <Route path="/aboutus" element={<AboutUs></AboutUs>} > </Route>
-        <Route path="/oops" element={<SubjectTopics/>} > </Route>
+        <Route path="/oops" element={<SubjectTopics subject='oops' />} > </Route>
+        <Route path="/javascript" element={<SubjectTopics subject='javascript' />} > </Route>
+        <Route path="/os" element={<SubjectTopics subject='os' />} > </Route>
+        <Route path="/linux" element={<SubjectTopics subject='linux' />} > </Route>
         <Route path='/login' element={<Login/>} ></Route>
       </Routes>
       <Footer/>

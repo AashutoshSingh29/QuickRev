@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Topics from "./Topics";
 
-const SubjectTopics = () => {
+const SubjectTopics = (props) => {
 
- const api = process.env.REACT_APP_API;
+//  const api = process.env.REACT_APP_API;
 
 const [topics,setTopics] = useState([]);
 
@@ -11,7 +11,7 @@ useEffect(() => {
     const fetchData = async () => {
       try {
         // Fetch the data from SubjectTopics.json
-        const response = await fetch(`/${api}`);
+        const response = await fetch(`/${props.subject}Topics.json`);
 
         // Check if the response is successful
         if (!response.ok) {
@@ -30,7 +30,7 @@ useEffect(() => {
 
     // Call the fetchData function
     fetchData();
-  },[]); 
+  },[props.subject]); 
 
     return (
         <>
