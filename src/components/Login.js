@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa6";
 import { FaLockOpen } from "react-icons/fa6";
 
 const Login = () => {
+
+    const [visible,setVisible] = useState([false]);
+
+    const handelVisibility =()=>{
+        setVisible(!visible);
+    }
+
+
    return(
     <div className="login">
         <div className="login-Container">
@@ -15,8 +23,9 @@ const Login = () => {
 
             <div className="input-box">
             <input className="login-input" type="password" placeholder="Enter Password" />
-            <FaLock className="icon-login" />
-            <FaLockOpen className="icon-login" />
+            {visible ?<FaLock className="icon-login" onClick={handelVisibility}/> :  <FaLockOpen className="icon-login" onClick={handelVisibility} />}
+            
+            
             </div>
 
             <div className="remember">
