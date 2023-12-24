@@ -3,13 +3,15 @@ import Topics from "./Topics";
 
 const SubjectTopics = () => {
 
+ const api = process.env.REACT_APP_API;
+
 const [topics,setTopics] = useState([]);
 
 useEffect(() => {
     const fetchData = async () => {
       try {
         // Fetch the data from SubjectTopics.json
-        const response = await fetch('/oopsTopics.json');
+        const response = await fetch(`/${api}`);
 
         // Check if the response is successful
         if (!response.ok) {
@@ -28,7 +30,7 @@ useEffect(() => {
 
     // Call the fetchData function
     fetchData();
-  }, []); 
+  },[]); 
 
     return (
         <>
