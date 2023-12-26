@@ -4,14 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import Login from './components/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <>
+  
   <BrowserRouter>
   <React.StrictMode>
       <App />
+      setTimeout(() => {
+        <Login/>
+      }, 5000);
   </React.StrictMode>
   </BrowserRouter>
+  </>
   
 );
 
