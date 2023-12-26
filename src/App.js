@@ -3,7 +3,6 @@ import AboutUs from './components/AboutUs';
 import Course from './components/Course';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer'
-import { useState } from 'react';
 import {
   Route,
   Routes
@@ -15,17 +14,9 @@ import Login from './components/Login';
 
 
 function App() {
-
-
-
-  const [showLogin, setShowLogin] = useState(false);
-setTimeout(() => {
-  setShowLogin(true);
-},5000);
   return (
     <div className="App">
       <NavBar></NavBar>
-      {showLogin && <Login />}
       <Routes>
         <Route path="/" element={<Course/>} ></Route>
         <Route path="/aboutus" element={<AboutUs></AboutUs>} > </Route>
