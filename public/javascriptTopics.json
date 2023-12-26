@@ -4,7 +4,7 @@
         "topicId": 1,
         "heading": "Closures",
         "body": [
-          "Closure is a function that uses variables from the outer lexical scope..",
+          "Closure is  a function that uses variables from the outer lexical scope..",
           "A closure gives you access to an outer function's scope from an inner function.",
           "JavaScript only had two kinds of scopes: function scope and global scope.",
           "Global variables can be made local (private) with closures."
