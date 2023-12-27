@@ -1,98 +1,95 @@
 {
-    "oops": [
-      {
-        "topicId": 1,
-        "heading": "Closures",
-        "body": [
-          "Closure is  a function that uses variables from the outer lexical scope..",
-          "A closure gives you access to an outer function's scope from an inner function.",
-          "JavaScript only had two kinds of scopes: function scope and global scope.",
-          "Global variables can be made local (private) with closures."
-        ],
-        "example": "function greet(name) {\n  function displayName() {\n  console.log('Hi' + ' ' + name);\n   }\n  displayName();\ngreet('John');"
-      },
-      {
-        "topicId": 2,
-        "heading": "async/await function",
-        "body": [
-          "async makes a function return a Promise.",
-          "await makes a function wait for a Promise.",
-          "The await keyword can only be used inside an async function."
-        ],
-        "example": ""
-      },
-      {
-        "topicId": 3,
-        "heading": "Inheritance",
-        "body": [
-          "Inheritance is the ability to access or derive one class from another existing class.",
-          "The Base class is also called a parent or superclass & the derived class is called a child class or subclass.",
-          "Inheritance is achieved by using the `extends` keyword.",
-          "It helps in code reuse and more simple implementation.",
-          "In JavaScript, objects also inherit methods from other objects."
-        ],
-        "example": ""
-      },
-      {
-        "topicId": 4,
-        "heading": "Types of Inheritance",
-        "body": [
-          "Prototypal Inheritance",
-          "Pseudo-classical Inheritance",
-          "Functional Inheritance"
-        ]
-      },
-      {
-        "topicId": 5,
-        "heading": "Prototypal Inheritance",
-        "body": [
-          " This type of inheritance in JavaScript adds new properties and methods to the existing object.",
-          "Prototypal inheritance in JavaScript makes use of prototype object that is object.prototype.",
-          "It is a method through which an object can inherit the properties as well as the methods of another object.",
-          "Initially, in order to get and set the [[Prototype]] of the object we used Object.getPrototypeOf and Object.setPrototypeOf. But now we can make use of __proto__."
-        ],
-        "example": ""
-      },
-      {
-        "topicId": 6,
-        "heading": "Pseudo-classical Inheritance",
-        "body": [
-          "Pseudoclassical inheritance uses “constructor function” and the “new” operator to create objects, and uses the “prototype” property to build the inheritance chain.",
-          "A constructor function is given a “prototype” property; this property is inherited by all instances.",
-          "If you are programming with ES6, then this type of inheritance in JavaScript is not supported."
-        ],
-        "example": ""
-      },
-      {
-        "topicId": 7,
-        "heading": "Functional Inheritance",
-        "body": [
-          "Functional inheritance is the process of inheriting features by applying an augmenting function to an object instance.",
-          "The function supplies a closure scope which you can use to keep some data private.",
-          "The augmenting function uses dynamic object extension to extend the object instance with new properties and methods."
-        ],
-        "example": "// Base object constructor function \n function Animal(data) { \n var that = {}; // Create an empty object \n that.name = data.name; // Add it a 'name' property \n return that; // Return the object \n }; \n // Create achild object, inheriting from the base Animal \n function Cat(data) { \n // Create the Animal object \n var that = Animal(data); \n // Extend base object \n that.sayHello = function() { \n return 'Hello ' + that.name; \n }; \n return that; \n }; \n // Usage \n var myCat = Cat({ name: 'Ayusha' }); \n console.log(myCat.sayHello());"
-      },
-      {
-        "topicId": 10,
-        "heading": "Callback",
-        "body": [
-          "In JavaScript, you can also pass a function as an argument to a function. This function that is passed as an argument inside of another function is called a callback function. ",
-          "These functions are great for handling asynchronous operations.",
-          "The consumer of a callback-based API writes a function that is passed into the API.",
-          "There are two ways in which the callback may be called: synchronous and asynchronous.",
-          "Synchronous callbacks are called immediately after the invocation of the outer function, with no intervening asynchronous tasks, while asynchronous callbacks are called at some point later, while after an asynchronous operation has completed."
-        ],
-        "example": "function hello(name, callback) \n { \n console.log('My name is '+ name) \n callback(); \n } \n function greet() \n { \n console.log('Welcome to the meeting') \n } \n hello('Ayusha',greet);"
-      },
-      {
-        "topicId": 11,
-        "heading": "Promise",
-        "body": [
-          ""
-        ],
-        "example":""
-      }
-
-    ]
-  }
+  "oops": [
+    {
+      "topicId": 1,
+      "heading": "Closures",
+      "body": [
+        "Closure is  a function that uses variables from the outer lexical scope..",
+        "A closure gives you access to an outer function's scope from an inner function.",
+        "JavaScript only had two kinds of scopes: function scope and global scope.",
+        "Global variables can be made local (private) with closures."
+      ],
+      "example": "function greet(name) {\n  function displayName() {\n  console.log('Hi' + ' ' + name);\n   }\n  displayName();\ngreet('John');"
+    },
+    {
+      "topicId": 2,
+      "heading": "async/await function",
+      "body": [
+        "async makes a function return a Promise.",
+        "await makes a function wait for a Promise.",
+        "The await keyword can  only be used inside an async function."
+      ],
+      "example": ""
+    },
+    {
+      "topicId": 3,
+      "heading": "Inheritance",
+      "body": [
+        "Inheritance is the ability to access or derive one class from another existing class.",
+        "The Base class is also called a parent or superclass & the derived class is called a child class or subclass.",
+        "Inheritance is achieved by using the `extends` keyword.",
+        "It helps in code reuse and more simple implementation.",
+        "In JavaScript, objects also inherit methods from other objects."
+      ],
+      "example": ""
+    },
+    {
+      "topicId": 4,
+      "heading": "Types of Inheritance",
+      "body": [
+        "Prototypal Inheritance",
+        "Pseudo-classical Inheritance",
+        "Functional Inheritance"
+      ]
+    },
+    {
+      "topicId": 5,
+      "heading": "Prototypal Inheritance",
+      "body": [
+        " This type of inheritance in JavaScript adds new properties and methods to the existing object.",
+        "Prototypal inheritance in JavaScript makes use of prototype object that is object.prototype.",
+        "It is a method through which an object can inherit the properties as well as the methods of another object.",
+        "Initially, in order to get and set the [[Prototype]] of the object we used Object.getPrototypeOf and Object.setPrototypeOf. But now we can make use of __proto__."
+      ],
+      "example": ""
+    },
+    {
+      "topicId": 6,
+      "heading": "Pseudo-classical Inheritance",
+      "body": [
+        "Pseudoclassical inheritance uses “constructor function” and the “new” operator to create objects, and uses the “prototype” property to build the inheritance chain.",
+        "A constructor function is given a “prototype” property; this property is inherited by all instances.",
+        "If you are programming with ES6, then this type of inheritance in JavaScript is not supported."
+      ],
+      "example": ""
+    },
+    {
+      "topicId": 7,
+      "heading": "Functional Inheritance",
+      "body": [
+        "Functional inheritance is the process of inheriting features by applying an augmenting function to an object instance.",
+        "The function supplies a closure scope which you can use to keep some data private.",
+        "The augmenting function uses dynamic object extension to extend the object instance with new properties and methods."
+      ],
+      "example": "// Base object constructor function \n function Animal(data) { \n var that = {}; // Create an empty object \n that.name = data.name; // Add it a 'name' property \n return that; // Return the object \n }; \n // Create achild object, inheriting from the base Animal \n function Cat(data) { \n // Create the Animal object \n var that = Animal(data); \n // Extend base object \n that.sayHello = function() { \n return 'Hello ' + that.name; \n }; \n return that; \n }; \n // Usage \n var myCat = Cat({ name: 'Ayusha' }); \n console.log(myCat.sayHello());"
+    },
+    {
+      "topicId": 10,
+      "heading": "Callback",
+      "body": [
+        "In JavaScript, you can also pass a function as an argument to a function. This function that is passed as an argument inside of another function is called a callback function. ",
+        "These functions are great for handling asynchronous operations.",
+        "The consumer of a callback-based API writes a function that is passed into the API.",
+        "There are two ways in which the callback may be called: synchronous and asynchronous.",
+        "Synchronous callbacks are called immediately after the invocation of the outer function, with no intervening asynchronous tasks, while asynchronous callbacks are called at some point later, while after an asynchronous operation has completed."
+      ],
+      "example": "function hello(name, callback) \n { \n console.log('My name is '+ name) \n callback(); \n } \n function greet() \n { \n console.log('Welcome to the meeting') \n } \n hello('Ayusha',greet);"
+    },
+    {
+      "topicId": 11,
+      "heading": "Promise",
+      "body": [""],
+      "example": ""
+    }
+  ]
+}
