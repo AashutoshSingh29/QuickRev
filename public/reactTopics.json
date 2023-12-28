@@ -11,7 +11,7 @@
         "It is developed and maintained by Facebook now Meta.",
         "we can install it by running the command."
       ],
-      "example": "npx install react"
+      "example": "npm install react"
     },
     {
       "topicId": 2,
@@ -28,6 +28,16 @@
         "const element = <h1>Hello, React!</h1>;\n",
         "ReactDOM.render(element, document.getElementById('root'));"
       ]
+    },
+    {
+      "topicId": 3,
+      "heading": "What is react-router-dom ?",
+      "body": [
+        "'react-router-dom' is a package for React that provides routing capabilities for single-page applications.",
+        "It navigates to the component without reloding the entire page.",
+        "It saves the server load and faster reloding"
+      ],
+      "example": ""
     }
   ]
 }
