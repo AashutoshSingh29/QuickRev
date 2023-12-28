@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   text-decoration: none;
   margin: 0;
@@ -6,26 +6,24 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(to bottom, #4cb4f0,#ffffff ); */
-  background: linear-gradient(to bottom, #f36a30,#f4f0f0 );
+  background: linear-gradient(to bottom, #f36a30, #f4f0f0);
   background-attachment: fixed;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 /* Navabar CSS */
-.navbar{
+.navbar {
   display: block;
   overflow: hidden;
   position: fixed;
@@ -49,18 +47,18 @@ code {
   margin-right: 40px;
 }
 
-.companyName{
+.companyName {
   display: block;
 }
 
-@media (max-width: 858px){
-  .bars-icon{
+@media (max-width: 858px) {
+  .bars-icon {
     display: block;
   }
-  .logo img{
+  .logo img {
     display: block;
   }
-  .companyName{
+  .companyName {
     display: block;
   }
   /* .listItems {
@@ -70,20 +68,18 @@ code {
     display: none;
     position: fixed;
     top: 0;
-    left: -250vh; 
+    left: -250vh;
     height: 60%;
     background-color: #333;
-    padding-top: 60px; 
+    padding-top: 60px;
     /* transition: 0.5s; */
     margin-top: 50px;
   }
   .listItems.visible {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     left: 0;
   }
-
-  
 
   /* ul {
     position: fixed;
@@ -98,13 +94,10 @@ code {
   } */
 }
 
-.listItems{
+.listItems {
   display: flex;
   flex-direction: row;
-  
 }
-
-
 
 .listItems.visible {
   display: flex; /* Visible when the 'visible' class is added */
@@ -118,12 +111,12 @@ code {
 }
 
 /* Navbar company logo */
-.logo{
+.logo {
   max-height: 50px;
   width: 50;
 }
 
-.logo img{
+.logo img {
   width: 60px;
   position: fixed;
   height: 60px;
@@ -149,30 +142,30 @@ ul {
   overflow: hidden;
   /* background-color: #333333; */
 }
- li a {
+li a {
   display: block;
   color: white;
   text-align: center;
   padding: 20px;
   text-decoration: none;
- }
+}
 
- /* Course Item card CSS */
+/* Course Item card CSS */
 .card-course {
   max-width: 400px;
   border: 1px solid rgb(158, 34, 34);
   margin-top: 80px;
   background-color: white;
-  padding: 0px 0px ; 
+  padding: 0px 0px;
   border-radius: 15px;
   height: 25rem;
 }
 
-.card:hover{
+.card:hover {
   box-shadow: 0px 0px 10px 3px lightgray;
 }
 
-.card-text{
+.card-text {
   padding: 10px 0px;
 }
 
@@ -182,27 +175,27 @@ ul {
   object-fit: cover;
   /* align-self: stretch; */
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px; 
+  border-top-right-radius: 15px;
 }
 
-@media (max-width: 858px){
-  .course-container{
+@media (max-width: 858px) {
+  .course-container {
     max-width: 100%;
     height: auto;
   }
-  .card-course{
+  .card-course {
     height: 25rem;
   }
-.card-course button{
-  height: auto;
-  margin-top: 15px;
-}
+  .card-course button {
+    height: auto;
+    margin-top: 15px;
+  }
 }
 
 /* Course Item Card CSS Ends */
 
 /* Course Container CSS */
-.course-container{
+.course-container {
   /* border: 2px solid black ; */
   margin: 10px;
   display: flex;
@@ -213,7 +206,7 @@ ul {
 }
 
 /* Button for Read More on Cards */
-.btn{
+.btn {
   border: none;
   border-radius: 10px;
   background-color: #007bff;
@@ -227,30 +220,28 @@ ul {
   margin: 5px;
 }
 
-.btn:hover{
+.btn:hover {
   box-shadow: 0 5px 5px 0 rgba(4, 4, 4, 0.24), 0 5px 5px 0 rgba(4, 4, 4, 0.19);
 }
 
-
-
 /* About Us page Banner */
-.containerCrousal{
+.containerCrousal {
   display: block;
   margin-top: 60px;
   height: 450px;
 }
 
-.bannerImage{
+.bannerImage {
   height: 100%;
 }
 
-.aboutUsContent{
+.aboutUsContent {
   min-height: 100vh;
 }
 
 /* Footer Css Starts*/
 
-footer{
+footer {
   background-color: #333333;
   display: grid;
   /* flex-wrap: wrap; */
@@ -260,7 +251,7 @@ footer{
   color: white;
   padding: 80px;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   bottom: 0;
   /* position: relative; */
 }
@@ -271,40 +262,39 @@ footer{
   }
 }
 
-.footer-content.contact{
+.footer-content.contact {
   display: flex;
   flex-direction: column;
   text-align: left;
   /* margin-left: 80px; */
 }
 
-.footer-content.social{
+.footer-content.social {
   text-align: left;
   display: flex;
   flex-direction: column;
 }
-.footer-content.quick-links{
+.footer-content.quick-links {
   text-align: left;
   display: flex;
   flex-direction: column;
   color: white;
   text-decoration: none;
-  
 }
-.footer-content a{
+.footer-content a {
   color: white;
   text-decoration: none;
 }
-.footer-content a:hover{
+.footer-content a:hover {
   background-color: #111111;
   width: fit-content;
 }
 
-.aboutUsParaHeading{
+.aboutUsParaHeading {
   margin-top: 5px;
 }
 
-.aboutUsPara{
+.aboutUsPara {
   color: #555;
   text-align: justify;
   margin: 20px;
@@ -319,16 +309,15 @@ footer{
 
 /* Footer CSS Ends here */
 
-
 /* Intro Card Css Here */
 
-.intro-card{
+.intro-card {
   font-family: "candra", sans-serif;
   width: 340px;
   overflow: hidden;
   background: #eee;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -336,16 +325,15 @@ footer{
   margin-left: 120px; */
 }
 
-
-.intro-card-img{
-width: 100%;
-height: 160px;
-border-top-right-radius: 10px;
-border-top-left-radius: 10px;
-object-fit: cover;
+.intro-card-img {
+  width: 100%;
+  height: 160px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
 }
 
-.intro-profile-image img{
+.intro-profile-image img {
   z-index: 0;
   width: 120px;
   height: 120px;
@@ -357,20 +345,20 @@ object-fit: cover;
   border: 2px solid #f4f0f0;
 }
 
-.intro-profile-image img:hover{
+.intro-profile-image img:hover {
   transform: scale(1.1);
 }
 
-.intro-card-title{
+.intro-card-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.intro-card-text{
+.intro-card-text {
   font-size: small;
   padding: 5px;
 }
 
-.intro{
+.intro {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -379,21 +367,19 @@ object-fit: cover;
   justify-content: space-around;
   align-items: center;
   gap: 40px;
-
 }
 
-@media (max-width:858px){
-  .intro-card button{
+@media (max-width: 858px) {
+  .intro-card button {
     height: auto;
   }
 }
 
 /* Intro card CSS Ended */
 
-
 /* Subject Topic CSS Starts */
 
-.subjects-container{
+.subjects-container {
   margin-top: 60px;
   border: solid 2px black;
   display: flex;
@@ -401,8 +387,8 @@ object-fit: cover;
   align-items: center;
   overflow: hidden;
 }
-@media (max-width:858px){
-  .subjects-container{
+@media (max-width: 858px) {
+  .subjects-container {
     width: 100%;
     height: auto;
     align-items: stretch;
@@ -410,70 +396,66 @@ object-fit: cover;
   }
 }
 
-
 /* Subject Topic CSS Ends */
-
 
 /* Topics Css Starts */
 
-.topics-container{
+.topics-container {
   width: 750px;
   height: auto;
   /* border: solid 2px white; */
-  background-color: #eee ;
+  background-color: #eee;
   /* margin-bottom: 20px; */
   box-sizing: border-box;
   overflow: auto;
 }
 
-@media (max-width:858px){
-  .topics-container{
+@media (max-width: 858px) {
+  .topics-container {
     width: 100%;
     height: auto;
     /* max-width: 250px; */
-
   }
-  .topic-code{
+  .topic-code {
     font-size: 12px;
   }
 }
-@media (max-width:425px){
-  .topics-container{
+@media (max-width: 425px) {
+  .topics-container {
     width: 100%;
     height: auto;
     /* max-width: 250px; */
-
   }
 }
 
-.topic-heading{
+.topic-heading {
   padding: 10px;
   text-align: left;
-  
 }
 
-.topic-body{
+.topic-body {
   padding: 10px;
-height: auto;
+  height: auto;
 }
-.topic-code{
-  color: rgb(11,11,127);
-  overflow:scroll;
+.topic-code {
+  color: rgb(11, 11, 127);
+  overflow: scroll;
   width: 450px;
 }
-.topic-example{
+.topic-example {
   background-color: #ababab72;
   overflow: auto;
 }
-.topic-pre{
+.topic-pre {
   background-color: #d1cfcf;
   border: 1px solid #999;
   display: block;
   padding: 5px;
   overflow-x: hidden;
+  text-align: left;
 }
 
-.topics-ul{
+.topics-ul {
   list-style-type: disc;
   color: #111111;
   padding-left: 20px;
@@ -481,35 +463,31 @@ height: auto;
   flex-direction: column;
   text-align: left;
 }
-.topics-listItem{
+.topics-listItem {
   list-style-type: disc;
   color: #111111;
   padding-left: 20px;
 }
 
-
 /* Topics Css Ended Here */
-
 
 /* Login form CSS start */
 
-.login-Container{
+.login-Container {
   margin-top: 90px;
   border: #007bff 2px solid;
-  background: rgba(185, 136, 62, 0.371) ;
+  background: rgba(185, 136, 62, 0.371);
   width: 450px;
   height: 450px;
   border-radius: 10px;
   padding: 30px 40px;
 }
 
-
-
-.login-input{
-  border-radius: 2px
+.login-input {
+  border-radius: 2px;
 }
 
-.login{
+.login {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -518,33 +496,33 @@ height: auto;
   box-sizing: border-box;
 }
 
-.login span{
+.login span {
   font-size: 36px;
   text-align: center;
 }
 
-.input-box{
+.input-box {
   position: relative;
   width: 100%;
   height: 50px;
   margin: 30px 0;
 }
-.input-box input{
+.input-box input {
   width: 100%;
   height: 50px;
   background: transparent;
   outline: none;
-  border: 2px solid rgba(255,255,255,255);
+  border: 2px solid rgba(255, 255, 255, 255);
   border-radius: 40px;
   font-size: 16px;
   padding: 20px 45px 20px 20px;
 }
 
-.input-box input::placeholder{
+.input-box input::placeholder {
   text-align: center;
 }
 
-.icon-login{
+.icon-login {
   position: absolute;
   right: 20px;
   top: 35%;
@@ -552,54 +530,53 @@ height: auto;
   font-size: 16px;
 }
 
-.remember{
+.remember {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
   margin: -15px 0 15px;
 }
 
-.remember label input{
+.remember label input {
   margin-right: 4px;
   accent-color: #eee;
 }
-.remember a{
+.remember a {
   text-decoration: none;
   color: #fff;
 }
-.remember a:hover{
+.remember a:hover {
   text-decoration: underline;
 }
 
-.login-Container button{
+.login-Container button {
   width: 100%;
   height: 45px;
   border: none;
   outline: none;
   border-radius: 40px;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-size: 16px;
   font-weight: 300;
   color: #333;
 }
 
-.register-link{
+.register-link {
   font-size: 14.5px;
   text-align: center;
   margin-top: 15px;
 }
 
-.register-link a{
+.register-link a {
   text-decoration: none;
   margin-left: 5px;
   color: #fff;
 }
 
-.register-link a:hover{
+.register-link a:hover {
   text-decoration: underline;
 }
-
 
 /* Login Component CSS Ended */

@@ -17,9 +17,17 @@
       "topicId": 2,
       "heading": "What is ReactDOM ?",
       "body": [
-        "ReactDOM is a package in React that provides methods for interacting with the Document Object Model (DOM)."
+        "ReactDOM is a package in React that provides methods for interacting with the Document Object Model (DOM).",
+        "ReactDOM is primarily used to render React elements into the DOM.",
+        "ReactDOM.render(): This method is used to render a React element into the DOM"
       ],
-      "example": "npx install react"
+      "example": [
+        "import React from 'react';\n",
+        "import ReactDOM from 'react-dom';\n",
+        "",
+        "const element = <h1>Hello, React!</h1>;\n",
+        "ReactDOM.render(element, document.getElementById('root'));"
+      ]
     }
   ]
 }
