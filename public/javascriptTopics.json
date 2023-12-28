@@ -89,9 +89,125 @@
         "topicId": 11,
         "heading": "Promise",
         "body": [
-          ""
+          "A Promise is a proxy for a value not necessarily known when the promise is created.",
+          "It allows you to associate handlers with an asynchronous action's eventual success value or failure reason.",
+          "This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.",
+          "A Promise is in one of these states:",
+          "pending: initial state, neither fulfilled nor rejected.",
+          "fulfilled: meaning that the operation was completed successfully.",
+          "rejected: meaning that the operation failed."
+        ],
+        "example":"const count = true; \n let countValue = new Promise(function (resolve, reject) { \n if (count) { \n resolve('There is a count value.') \n  } else { \n reject('There is no count value'); \n } \n }); \n console.log(countValue);"
+      },
+      {
+        "topicId": 12,
+        "heading": "Promise concurrency",
+        "body": [
+          "The Promise class offers four static methods to facilitate async task concurrency",
+          "Promise.all(): Fulfills when all of the promises fulfill; rejects when any of the promises rejects.",
+          "Promise.allSettled(): Fulfills when all promises settle.",
+          "Promise.any(): Fulfills when any of the promises fulfills; rejects when all of the promises reject.",
+          "Promise.race(): Settles when any of the promises settles. In other words, fulfills when any of the promises fulfills; rejects when any of the promises rejects."
         ],
         "example":""
+      },
+      {
+        "topicId": 13,
+        "heading": "Hoisting",
+        "body": [
+          "Hoisting is a concept that enables us to extract values of variables and functions even before initializing/assigning value without getting errors and this happens during the 1st phase (memory creation phase) of the Execution Context.",
+          "Hoisting is JavaScript's default behavior of moving declarations to the top.",
+          "JavaScript only hoists declarations, not initializations.",
+          "It allows us to call functions before even writing them in our code.",
+          "Var is hoisted without any error.",
+          "If let is hoisted, we get 'Reference Error'",
+          "If const is hoisted, we get 'Syntax Error'"
+        ],
+        "example":"var coffeeBlend; \n console.log(coffeeBlend); \n coffeeBlend = 'Dark Roast'; \n \n // Output: undefined \n brewCoffee(); \n function brewCoffee() { \n console.log('Brewing a fresh pot of coffee!'); \n } \n \n // Output: 'Brewing a fresh pot of coffee!'"
+      },
+      {
+        "topicId": 14,
+        "heading": "var vs let vs const",
+        "body": [
+          "Var was introduced in original version but let and const is introduced in ES6 features.",
+          "Var has functional scope but let and const has block scope.",
+          "Var allows hoisting but let and const does not allow hoisting.",
+          "Value can be reassigned in var and let but not in const",
+          "Var variables can be redeclarated but let and const variables cannot be redeclarated.",
+          "Var variables can be accessed without initializing but let and const variable cannot be accessed without intializing."
+
+        ],
+        "example":""
+      },
+      {
+        "topicId": 15,
+        "heading": "Data Types of javascript",
+        "body": [
+          "JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine.",
+          "JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript:",
+          "Primitive data type",
+          "Non-primitive (reference) data type"
+
+        ],
+        "example":""
+      },
+      {
+        "topicId": 16,
+        "heading": "Primitive data type",
+        "body": [
+          "here are five types of primitive data types in JavaScript:",
+          "String: represents sequence of characters e.g. 'hello'",
+          "Number: represents numeric values e.g. 100",
+          "Boolean: represents boolean value either false or true",
+          "Undefined: represents undefined value",
+          "Null: represents null i.e. no value at all"
+
+        ],
+        "example":""
+      },
+      {
+        "topicId": 17,
+        "heading": "Non-Primitive data type",
+        "body": [
+          "The non-primitive data types are as follows:",
+          "Object: represents instance through which we can access members",
+          "Array: represents group of similar values",
+          "RegExp: represents regular expression"
+        ],
+        "example":""
+      },
+      {
+        "topicId": 18,
+        "heading": "High-Order Functions",
+        "body": [
+          "Higher order functions are functions that take one or more functions as arguments, or return a function as their result.",
+          "JavaScript has a few built-in higher-order functions:",
+          "JavaScript Reduce(): Reduce is a powerful method that takes an array of elements to reduce them by applying a function to each element. It accumulates all the elements and returns a single value.",
+          "JavaScript Map(): The Map function allows you to modify each element of an array returning a new identical array. You can also accomplish this by using for loops or nesting. Map() provides a more elegant way to do it following the functional programming rules.",
+          "JavaScript Filter(): This function can filter an array according to a particular condition and returns a new array with the elements that passed the condition. Remember that the original stays as is since it returns a new array.",
+          "JavaScript Sort(): The sort() function allows you to overwrite an array by sorting its elements. If it's an array of integers, it'll sort it in ascending order by default. On the flip side, if it's an array of strings, it will sort it alphabetically. What if you don't want to sort an array in alphabetical or ascending order, you may ask? You can easily sort arrays in non-alphabetical or descending order by combining sort() with reverse(). So after sorting the list, you have to do listname.reverse() to reverse its order."
+        ],
+        "example":"// Callback function, passed as a parameter in the higher order function \n function callbackFunction(){ \n console.log('I am  a callback function'); \n } \n \n // higher order function \n function higherOrderFunction(func){ \n console.log('I am higher order function') \n func() \n } \n higherOrderFunction(callbackFunction);"
+      },
+      {
+        "topicId": 19,
+        "heading": "IIFE (Immediately Invoked Function Expression)",
+        "body": [
+          "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.",
+          "It is a design pattern which is also known as a Self-Executing Anonymous Function and contains two major parts:",
+          "The first is the anonymous function with lexical scope enclosed within the Grouping Operator (). This prevents accessing variables within the IIFE idiom as well as polluting the global scope.",
+          "The second part creates the immediately invoked function expression () through which the JavaScript engine will directly interpret the function."
+        ],
+        "example":"(function sum(){ \n let length=2; \n let breadth=6; \n let height=3; \n let cube=length*breadth*height; \n console.log(cube); \n })();"
+      },
+      {
+        "topicId": 20,
+        "heading": "Currying",
+        "body": [
+          "Currying in JavaScript transforms a function with multiple arguments into a nested series of functions, each taking a single argument.",
+          "Currying helps you avoid passing the same variable multiple times, and it helps you create a higher order function."
+        ],
+        "example":"function sum(length){ \n return function (breadth){ \n return function (height){ \n return length*breadth*height; \n } \n } \n } \n console.log(sum(2)(3)(6));"
       }
 
     ]
