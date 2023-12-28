@@ -1,0 +1,25 @@
+{
+  "oops": [
+    {
+      "topicId": 1,
+      "heading": "What is React ?",
+      "body": [
+        "React is a JavaScript library.",
+        "It is component-based front-end library responsible for the view layer of application.",
+        "It is used to create single page applications.",
+        "It makes use of component based structure by which we can reuse any component any number of times.",
+        "It is developed and maintained by Facebook now Meta.",
+        "we can install it by running the command."
+      ],
+      "example": "npx install react"
+    },
+    {
+      "topicId": 2,
+      "heading": "What is ReactDOM ?",
+      "body": [
+        "ReactDOM is a package in React that provides methods for interacting with the Document Object Model (DOM)."
+      ],
+      "example": "npx install react"
+    }
+  ]
+}
