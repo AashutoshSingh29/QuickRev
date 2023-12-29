@@ -38,6 +38,22 @@
         "It saves the server load and faster reloding"
       ],
       "example": ""
+    },
+    {
+      "topicId": 3,
+      "heading": "What is JSX ?",
+      "body": [
+        "JSX is Generally know as JavaScript XML.",
+        "It is used to include HTML like content in javascript files.",
+        "JSX makes use of React.createElement which creates an object which is rendered in HTML(DOM)",
+        "JSX can have only one parent.",
+        "To include multiple it uses React.Fragment ' <></> '."
+      ],
+      "example": [
+        "const element = <h1>Hello, JSX!</h1>;\n",
+        " // gets transformed into\n",
+        "const element = React.createElement('h1', null, 'Hello, JSX!');"
+      ]
     }
   ]
 }
