@@ -62,7 +62,7 @@
         "React is fast because it uses something known as Virtual DOM.",
         "Virtual DOM stores a tree like structure which is representation of actual DOM.",
         "Which then uses Reconciliation method.",
-        "Which implements the differ algorithms and gives which nodes have been modified.",
+        "Which implements the diffing algorithms and gives which nodes have been modified.",
         "Then react re-reders only those nodes instead of complete DOM tree.",
         "In order to uniquely identify each node and check for update react requires unique key for each node."
       ],
