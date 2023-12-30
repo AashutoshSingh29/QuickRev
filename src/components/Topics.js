@@ -17,6 +17,9 @@ const Topics = (props) => {
             ))}
           </ul>
         </div>
+        {props.url && (
+          <img src={props.url} alt="sample" style={{ width: "100%" }}></img>
+        )}
         {props.example && (
           <div className="topic-example">
             <pre className="topic-pre">
