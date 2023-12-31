@@ -68,6 +68,20 @@
       ],
       "sampleImageUrl": "https://imgs.search.brave.com/A0CW91E0odxmM1A9BAR5RuZf1Wz1Nes9jCQ7ymGu2EY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/a25vd2xlZGdlaHV0/LmNvbS9fbmV4dC9p/bWFnZT91cmw9aHR0/cHM6Ly9kMm8ydXRl/YnNpeHU0ay5jbG91/ZGZyb250Lm5ldC9t/ZWRpYS9pbWFnZXMv/MTY1MDI2Nzc4MDg4/MC1JbWFnZS0yJTIw/KDQpLnBuZyZ3PTM4/NDAmcT03NQ",
       "example": null
+    },
+    {
+      "topicId": 5,
+      "heading": "Why react is fast ?",
+      "body": [
+        "React is fast because it uses something known as Virtual DOM.",
+        "Virtual DOM stores a tree like structure which is representation of actual DOM.",
+        "Which then uses Reconciliation method.",
+        "Which implements the diffing algorithms and gives which nodes have been modified.",
+        "Then react re-reders only those nodes instead of complete DOM tree.",
+        "In order to uniquely identify each node and check for update react requires unique key for each node."
+      ],
+      "sampleImageUrl": "https://imgs.search.brave.com/A0CW91E0odxmM1A9BAR5RuZf1Wz1Nes9jCQ7ymGu2EY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/a25vd2xlZGdlaHV0/LmNvbS9fbmV4dC9p/bWFnZT91cmw9aHR0/cHM6Ly9kMm8ydXRl/YnNpeHU0ay5jbG91/ZGZyb250Lm5ldC9t/ZWRpYS9pbWFnZXMv/MTY1MDI2Nzc4MDg4/MC1JbWFnZS0yJTIw/KDQpLnBuZyZ3PTM4/NDAmcT03NQ",
+      "example": null
     }
   ]
 }
