@@ -71,16 +71,17 @@
     },
     {
       "topicId": 5,
-      "heading": "Why react is fast ?",
+      "heading": "What are React Hooks ?",
       "body": [
-        "React is fast because it uses something known as Virtual DOM.",
-        "Virtual DOM stores a tree like structure which is representation of actual DOM.",
-        "Which then uses Reconciliation method.",
-        "Which implements the diffing algorithms and gives which nodes have been modified.",
-        "Then react re-reders only those nodes instead of complete DOM tree.",
-        "In order to uniquely identify each node and check for update react requires unique key for each node."
+        "Hooks are react functions which helps in state mangement without writing a class.",
+        "Hooks allow you to reuse stateful logic without changing your component hierarchy.",
+        "Stateful logic can be extracted from components and tested independently with use of hooks.",
+        "Hooks let you split one component into smaller functions based on what pieces are related.",
+        "Classes don’t minify very well, and they make hot reloading flaky and unreliable.",
+        "To solve these problems, Hooks let you use more of React’s features without classes.",
+        "Crucially, Hooks work side-by-side with existing code so you can adopt them gradually."
       ],
-      "sampleImageUrl": "https://imgs.search.brave.com/A0CW91E0odxmM1A9BAR5RuZf1Wz1Nes9jCQ7ymGu2EY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/a25vd2xlZGdlaHV0/LmNvbS9fbmV4dC9p/bWFnZT91cmw9aHR0/cHM6Ly9kMm8ydXRl/YnNpeHU0ay5jbG91/ZGZyb250Lm5ldC9t/ZWRpYS9pbWFnZXMv/MTY1MDI2Nzc4MDg4/MC1JbWFnZS0yJTIw/KDQpLnBuZyZ3PTM4/NDAmcT03NQ",
+      "sampleImageUrl": null,
       "example": null
     }
   ]
