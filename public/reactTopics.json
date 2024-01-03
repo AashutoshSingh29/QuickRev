@@ -79,7 +79,6 @@
         "Hooks let you split one component into smaller functions based on what pieces are related.",
         "Classes don’t minify very well, and they make hot reloading flaky and unreliable.",
         "To solve these problems, Hooks let you use more of React’s features without classes.",
-        "Crucially, Hooks work side-by-side with existing code so you can adopt them gradually.",
         "Crucially, Hooks work side-by-side with existing code so you can adopt them gradually."
       ],
       "sampleImageUrl": null,
