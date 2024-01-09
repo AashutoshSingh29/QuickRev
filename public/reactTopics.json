@@ -15,6 +15,17 @@
     },
     {
       "topicId": 2,
+      "heading": "Important feature's of React are:",
+      "body": [
+        "It supports server-side rendering",
+        "It will make use of the virtual DOM rather than real DOM (Data Object Model) as RealDOM manipulations are expensive.",
+        "It follows unidirectional data binding or data flow.",
+        "It uses reusable or composable UI components for developing the view."
+      ],
+      "example": null
+    },
+    {
+      "topicId": 2,
       "heading": "What is ReactDOM ?",
       "body": [
         "ReactDOM is a package in React that provides methods for interacting with the Document Object Model (DOM).",
