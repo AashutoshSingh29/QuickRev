@@ -25,7 +25,7 @@
       "example": null
     },
     {
-      "topicId": 2,
+      "topicId": 3,
       "heading": "What is ReactDOM ?",
       "body": [
         "ReactDOM is a package in React that provides methods for interacting with the Document Object Model (DOM).",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "topicId": 3,
+      "topicId": 4,
       "heading": "What is react-router-dom ?",
       "body": [
         "'react-router-dom' is a package for React that provides routing capabilities for single-page applications.",
@@ -51,7 +51,7 @@
       "example": ""
     },
     {
-      "topicId": 3,
+      "topicId": 5,
       "heading": "What is JSX ?",
       "body": [
         "JSX is Generally know as JavaScript XML.",
@@ -62,12 +62,12 @@
       ],
       "example": [
         "const element = <h1>Hello, JSX!</h1>;\n",
-        " // gets transformed into\n",
+        " // gets transformed from \n",
         "const element = React.createElement('h1', null, 'Hello, JSX!');"
       ]
     },
     {
-      "topicId": 4,
+      "topicId": 6,
       "heading": "Why react is fast ?",
       "body": [
         "React is fast because it uses something known as Virtual DOM.",
@@ -81,7 +81,7 @@
       "example": null
     },
     {
-      "topicId": 5,
+      "topicId": 7,
       "heading": "What are React Hooks ?",
       "body": [
         "Hooks are react functions which helps in state mangement without writing a class.",
@@ -94,6 +94,31 @@
       ],
       "sampleImageUrl": null,
       "example": null
+    },
+    {
+      "topicId": 8,
+      "heading": "What are useState() in React ?",
+      "body": [
+        "The useState are default built-in react hooks.",
+        "They are just like a normal javascript function but used differently.",
+        "They are used to handel state variables in react functional component.",
+        "Whenever there is a variable in dom that chages dynamically then we utilize useState hook to handel it's state.",
+        "useState is imported as a named import from react"
+      ],
+      "sampleImageUrl": null,
+      "example": [
+        "import React, {useState} from 'react';\n",
+        "  \n",
+        "const [age,setAge] = useState(17); \n",
+        " \n",
+        "// now when the state of age variable changes \n",
+        "// we can't directly assign   setAge = 18 \n",
+        "// we have to call it as a function \n",
+        " \n",
+        " const updateAge = () => { \n",
+        "     setAge(18); \n",
+        "   }\n"
+      ]
     }
   ]
 }
