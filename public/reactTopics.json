@@ -119,6 +119,31 @@
         "     setAge(18); \n",
         "   }\n"
       ]
+    },
+    {
+      "topicId": 9,
+      "heading": "What are useState() in React ?",
+      "body": [
+        "The useState are default built-in react hooks.",
+        "They are just like a normal javascript function but used differently.",
+        "They are used to handel state variables in react functional component.",
+        "Whenever there is a variable in dom that chages dynamically then we utilize useState hook to handel it's state.",
+        "useState is imported as a named import from react"
+      ],
+      "sampleImageUrl": null,
+      "example": [
+        "import React, {useState} from 'react';\n",
+        "  \n",
+        "const [age,setAge] = useState(17); \n",
+        " \n",
+        "// now when the state of age variable changes \n",
+        "// we can't directly assign   setAge = 18 \n",
+        "// we have to call it as a function \n",
+        " \n",
+        " const updateAge = () => { \n",
+        "     setAge(18); \n",
+        "   }\n"
+      ]
     }
   ]
 }
