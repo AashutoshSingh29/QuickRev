@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import SubjectTopics from "./components/SubjectTopics";
 import Login from "./components/Login";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           path="/react"
           element={<SubjectTopics subject="react" />}
         ></Route>
+        <Route path="/contactus" element={<ContactUs />}></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
       <Footer />
