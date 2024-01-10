@@ -584,36 +584,16 @@ footer {
 
 /* Contact Us Css */
 
-.contactus-container {
+.contact-us {
   margin-top: 60px;
   height: 100vh;
   display: flex;
-  background-color: #0a1723;
-  justify-content: space-between;
-}
-
-.contact-info {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.contact-form {
-  width: 50%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  /* align-items: start; */
-  color: black;
-  border: 1px solid white;
-  border-radius: 4px;
-  padding: 2px;
-  box-sizing: border-box;
-  background-color: #fff;
-  width: 350px;
-  height: 350px;
+
+.contact-us div {
+  border: solid 2px white;
+  height: 450px;
+  width: 450px;
 }
