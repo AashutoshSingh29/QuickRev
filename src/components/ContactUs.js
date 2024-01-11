@@ -20,7 +20,7 @@ const ContactUs = () => {
           <p>Kattigenahalli, Bengaluru-560064</p>
         </div>
       </div>
-      <div className="form">World</div>
+      <div className="form">Hello World</div>
     </div>
   );
 };
