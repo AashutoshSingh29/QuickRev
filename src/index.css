@@ -590,14 +590,28 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: #0a1723;
 }
 
-.contact-us div {
-  border: solid 2px white;
-  height: 450px;
-  width: 450px;
+.block {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid whitesmoke; */
+  margin: 2px;
 }
 
-.contact-us .block .box-1 h2 {
-  text-align: left;
+.box {
+  display: flex;
+  margin: 10px;
+}
+.box p {
+  font-size: large;
+  font-weight: 500;
+  padding: 2px;
+  margin-left: 10px;
+  color: white;
+}
+.form {
+  display: flex;
+  border: 1px solid whitesmoke;
 }
