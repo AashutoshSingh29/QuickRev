@@ -597,3 +597,7 @@ footer {
   height: 450px;
   width: 450px;
 }
+
+.contact-us .block .box-1 h2 {
+  text-align: left;
+}
