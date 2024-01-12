@@ -630,7 +630,7 @@ footer {
   border-radius: 20px;
 }
 
-.form {
+.myForm {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -641,13 +641,13 @@ footer {
   padding: 30px 40px;
 }
 
-.form h2 {
+.myForm h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding: 10px;
 }
 
-.form span {
+.myForm span {
   font-family: sans-serif;
   text-align: left;
   font-weight: 200;
@@ -655,7 +655,7 @@ footer {
   padding-bottom: 10px;
 }
 
-.form input {
+.myForm input {
   width: 100%;
   height: 50px;
   background: transparent;
@@ -668,7 +668,7 @@ footer {
   padding: 20px 45px 20px 20px;
 }
 
-.form button {
+.myForm button {
   margin-top: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -677,10 +677,46 @@ footer {
   border: 2px solid black;
   color: white;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.form button:hover {
+.myForm button:hover {
   /* box-shadow: 0px 0px 10px 3px lightslategray; */
   box-shadow: 0 5px 5px 0 rgba(4, 4, 4, 0.24), 0 5px 5px 0 rgba(4, 4, 4, 0.19);
   transform: translate(0.5px);
+}
+
+/* Responsive styles for medium screens (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-section {
+    margin-top: 20px;
+  }
+  .myForm {
+    width: 100%;
+  }
+}
+
+/* Responsive styles for small screens (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-section {
+    margin-top: 20px;
+  }
+  .myForm {
+    width: 100%;
+    padding: 20px;
+  }
+  .myForm input {
+    padding: 10px;
+  }
+  .myForm button {
+    margin-top: 10px;
+  }
 }

@@ -4,6 +4,24 @@ import { CiMail } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
 
 const ContactUs = () => {
+  const handelMessageSent = () => {
+    var name = document.getElementById("userName").value;
+    var email = document.getElementById("userEmail").value;
+    var number = document.getElementById("phoneNumber").value;
+    var message = document.getElementById("messageContent").value;
+    const Response = [
+      {
+        Name: { name },
+        Email: { email },
+        Number: { number },
+        Message: { message },
+      },
+    ];
+    console.log(Response);
+    // alert(name, email, number, message);
+    document.getElementById("myForm").reset();
+  };
+
   return (
     <div className="contact-us">
       <div className="block">
@@ -27,18 +45,34 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="form-section">
-        <div className="form">
-          <h2>Write to us.....</h2>
-          <span>Your Name</span>
-          <input type="text" placeholder="Full Name" />
-          <span>Email</span>
-          <input type="text" placeholder="example@example.com" />
-          <span>Number</span>
-          <input type="contact" placeholder="Contact Number" />
-          <span>Description</span>
-          <input type="text" placeholder="Type your message here....." />
-          <button>Send Message</button>
-        </div>
+        <form id="myForm">
+          <div className="myForm">
+            <h2>Write to us.....</h2>
+            <span>Your Name</span>
+            <input type="text" id="userName" placeholder="Full Name" />
+            <span>Email</span>
+            <input
+              type="text"
+              id="userEmail"
+              placeholder="example@example.com"
+            />
+            <span>Number</span>
+            <input
+              type="contact"
+              id="phoneNumber"
+              placeholder="Contact Number"
+            />
+            <span>Description</span>
+            <input
+              type="text"
+              id="messageContent"
+              placeholder="Type your message here....."
+            />
+            <button type="button" onClick={handelMessageSent}>
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
