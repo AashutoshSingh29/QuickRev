@@ -119,6 +119,32 @@
         "     setAge(18); \n",
         "   }\n"
       ]
+    },
+    {
+      "topicId": 9,
+      "heading": "What are useEffect() in React ?",
+      "body": [
+        "The useEffect are default built-in react hooks.",
+        "The useEffect hook is used to handel side effects in the functional component.",
+        "'useEffect' is imported as a named import from react.",
+        "The useEffect hook is called after the intial rendering of the component.",
+        "The useEffect hook takes two aruguments one is a callback function and the other is a dependancy array.",
+        "If the dependancy array is missing then useEffect will be called after each re-render.",
+        "If the dependancy array is empty then the useEffect will be called once after the intial render.",
+        "It the dependancy array has a value then whenever its state changes then the component re-render and useEffect is called."
+      ],
+      "sampleImageUrl": null,
+      "example": [
+        "import React, {useEffect} from 'react';\n",
+        "  \n",
+        "function WishTimer() {\n",
+        " useEffect(() => {\n",
+        " // Effect function\n",
+        " const timerId = setTimeout(() => {\n",
+        " console.log('Happy New Year!');\n",
+        " }, 3000);\n",
+        "}, []);"
+      ]
     }
   ]
 }
