@@ -138,12 +138,19 @@
         "import React, {useEffect} from 'react';\n",
         "  \n",
         "function WishTimer() {\n",
-        " useEffect(() => {\n",
-        " // Effect function\n",
-        " const timerId = setTimeout(() => {\n",
-        " console.log('Happy New Year!');\n",
-        " }, 3000);\n",
-        "}, []);"
+        "  useEffect(() => {\n",
+        "   // Effect function\n",
+        "   const timerId = setTimeout(() => {\n",
+        "   console.log('Happy New Year!');\n",
+        "  }, 3000);\n",
+        " }, []);\n",
+        "  \n",
+        " return (\n",
+        "   <div>\n",
+        "      {/* Component content (if any) */}\n",
+        "   </div>\n",
+        "  );\n",
+        " }"
       ]
     }
   ]
